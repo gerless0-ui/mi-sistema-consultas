@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Mi Buscador</title>
+<style>
+body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
+.caja { background: white; padding: 20px; border-radius: 10px; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="caja">
+<h1>Buscador de Consultas</h1>
+<input type="text" id="input" placeholder="Escribe algo...">
+<button onclick="buscar()">Buscar</button>
+<p id="res"></p>
+</div>
+<script>
+function buscar() {
+var v = document.getElementById('input').value;
+document.getElementById('res').innerHTML = "Buscando: " + v;
+}
+</script>
+</body>
+</html>
